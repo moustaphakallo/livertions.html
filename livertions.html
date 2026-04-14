@@ -1181,14 +1181,46 @@ footer {
     max-width: 100%;
   }
 }
-body {
 
-}
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.cats {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.cat-card {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 180px;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* 🔥 ANIMATION DÉFILEMENT */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 </style>
 </head>
@@ -1212,29 +1244,24 @@ img {
   </div>
 </nav>
 
-
 <section class="hero-section">
-  <div class="hero" style="display: flex;">
+  <div class="hero">
 
-    <!-- LEFT (grande image) -->
     <div class="hero-left">
-      <img src="https://e-commerce-project-azure-five.vercel.app/image-p.png" alt="">
+      <img src="https://e-commerce-project-azure-five.vercel.app/image-p.png">
       <div class="hero-left-tag">Été 2026 — Paris</div>
     </div>
 
-    <!-- RIGHT -->
-    <div class="hero-right" style="display: block;">
+    <div class="hero-right">
 
-      <!-- TOP IMAGE -->
       <div class="hero-img-top">
-         <img src="https://e-commerce-project-azure-five.vercel.app/line.png" alt="">
+        <img src="https://e-commerce-project-azure-five.vercel.app/line.png">
       </div>
 
-      <!-- TEXTE -->
       <div class="hero-content">
-      
         <div class="hero-eyebrow">Nouvelle collection</div>
         <h1 class="hero-title">L'ultime<br><em>art</em> de<br>s'habiller</h1>
+
         <p class="hero-body">
           Des pièces intemporelles pensées pour chaque instant.
         </p>
@@ -1245,27 +1272,20 @@ img {
         </div>
       </div>
 
-      <!-- BOTTOM IMAGE -->
-     <img src="https://e-commerce-project-azure-five.vercel.app/shopingphoto.png" alt="" style="margin-top: 20px;">
-         
+      <div class="hero-img-bottom">
+        <img src="https://e-commerce-project-azure-five.vercel.app/shopingphoto.png">
+      </div>
+
     </div>
-        <img src="https://e-commerce-project-azure-five.vercel.app/image%20227.png" alt="">
   </div>
 </section>
 <div class="marquee-wrap">
   <div class="marquee-inner">
-    
-    <span>Nouveautés <span class="marquee-dot">✦ <img src="Kallo10.jpg"></span></span>
-    <span>Livraison offerte <span class="marquee-dot">✦ <img src="Kallo16.jpg"></span></span>
-    <span>Collection Été 2026 <span class="marquee-dot">✦ <img src="Kallo18.jpg"></span></span>
-    <span>Retours 30 jours <span class="marquee-dot">✦ <img src="Kallo20.jpg"></span></span>
-    <span>Matières durables <span class="marquee-dot">✦ <img src="Kallo21.jpg"></span></span>
-    <span>Fabriqué en France <span class="marquee-dot">✦ <img src="Kallo28.jpg"></span></span>
 
-    <!-- DUPLIQUE pour boucle infinie -->
-    <span>Nouveautés <span class="marquee-dot">✦ <img src="Kallo10.jpg"></span></span>
-    <span>Livraison offerte <span class="marquee-dot">✦ <img src="Kallo16.jpg"></span></span>
-    <span>Collection Été 2026 <span class="marquee-dot">✦ <img src="Kallo18.jpg"></span></span>
+    <span>Nouveautés <span class="marquee-dot">✦ <img src="Kallo21.jpg"></span></span>
+    <span>Livraison offerte <span class="marquee-dot">✦ <img src="Kallo43.jpg"></span></span>
+    <span>Collection Été 2026 <span class="marquee-dot">✦ <img src="Kallo30.jpg"></span></span>
+    <span>Retours 30 jours <span class="marquee-dot">✦ <img src="Kallo38.jpg"></span></span>
 
   </div>
 </div>
@@ -1358,91 +1378,37 @@ img {
         <div class="cat-count">124 articles</div>
       </div>
     </div> -->
-    <div class="cats">
-    <div class="cat-card">
-      <div class="cat-img" style="background:#f0ece5;">
-        <img src="Kallo43.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Hauts & Tops</div>
-        <div class="cat-count">124 articles</div>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-img" style="background:#e5ecf0;">
-        <img src="Kallo11.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Pantalons</div>
-        <div class="cat-count">86 articles</div>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-img" style="background:#f0e5e5;">
-        <img src="Kallo16.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Robes & Jupes</div>
-        <div class="cat-count">97 articles</div>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo21.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
-     <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo28.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
-      <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo29.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
+<div class="cats">
+  
+  <div class="track">
     
-      <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo37.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
-     <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo38.jpg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
-       <div class="cat-card">
-      <div class="cat-img" style="background:#e5f0e8;">
-        <img src="Kallo42.jpeg" alt="">
-      </div>
-      <div class="cat-info">
-        <div class="cat-name">Chaussures</div>
-        <div class="cat-count">63 articles</div>
-      </div>
-    </div>
+    <div class="cat-card"><img src="Kallo38.jpg"></div>
+    <div class="cat-card"><img src="Kallo37.jpg"></div>
+    <div class="cat-card"><img src="Kallo10.jpg"></div>
+    <div class="cat-card"><img src="Kallo8.jpg"></div>
+    <div class="cat-card"><img src="Kallo16.jpg"></div>
+    <div class="cat-card"><img src="Kallo19.jpg"></div>
+    <div class="cat-card"><img src="Kallo20.jpg"></div>
+    <div class="cat-card"><img src="Kallo21.jpg"></div>
+    <div class="cat-card"><img src="Kallo29.jpg"></div>
+    <div class="cat-card"><img src="Kallo42.jpeg"></div>
+
+    <!-- DUPLICATION POUR LOOP -->
+    <div class="cat-card"><img src="Kallo36.jpg"></div>
+    <div class="cat-card"><img src="Kallo31.jpg"></div>
+    <div class="cat-card"><img src="Kallo40.jpg"></div>
+    <div class="cat-card"><img src="Kallo43.jpg"></div>
+
   </div>
-</section>
+
+</div>
+
+
+
+
+
+
+
 
 <!-- BANNER -->
 <section>
